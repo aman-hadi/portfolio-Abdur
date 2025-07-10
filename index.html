@@ -244,43 +244,45 @@
   </div>
 
   <!-- Contact Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <form name="contact form" method="get" action="#">
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="exampleModalLabel">Contact Form</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
-        <div class="col-md-6 mt-3 px-5">
-          <form name="contact form" method="get" action="#">
-            <div class="mb-3">
-              <label class="form-label">Student Name</label>
-              <input type="text" name="student name" placeholder="Abdur Rahman" class="form-control" />
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Student Email</label>
-              <input type="email" name="student email" placeholder="a65695361@gmail.com"
-                class="form-control" />
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Student Phone</label>
-              <input type="tel" name="student phone" placeholder="9279233817" class="form-control" />
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Student Query</label>
-              <textarea name="student query" class="form-control"></textarea>
-            </div>
-          </form>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">Student Name</label>
+            <input type="text" name="student_name" placeholder="Abdur Rahman" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Student Email</label>
+            <input type="email" name="student_email" placeholder="a65695361@gmail.com" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Student Phone</label>
+            <input type="tel" name="student_phone" placeholder="9279233817" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Student Query</label>
+            <textarea name="student_query" class="form-control"></textarea>
+          </div>
         </div>
 
         <div class="modal-footer">
           <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
-          <button type="submit" value="SUBMIT DATA" class="btn btn-danger" data-bs-dismiss="modal">Submit Data</button>
+          <button type="submit" class="btn btn-danger">Submit Data</button>
         </div>
-      </div>
+      </form>
+
     </div>
   </div>
+</div>
+
 
   <div class="subfooter">
     <p>Designed & Built by Abdur Rahman</p>
