@@ -355,8 +355,22 @@
     font-size: 1.5rem;
     color: #000;
 }
+@media (max-width: 992px) {
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .portfolio-layer>h4 {
+        font-size: 22px;
+    }
+    .portfolio-layer p {
+        font-size: 19px;
+    }
+    .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+    }
 
-@media (max-width: 767px) {
     .mainpara {
         flex-wrap: wrap;
     }
@@ -456,6 +470,10 @@
         margin-left: 0px;
     }
 
+    .portfolio-layer a i {
+        font-size: 20px;
+        color: #000;
+    }
 
     .headbox {
         text-align: center;
@@ -471,6 +489,52 @@
 
     .portfolio-box .portfolio-layer {
         width: 100%;
-        height: 100%;
+        padding: 0 2rem;
     }
+
+    .portfolio-layer a {
+        width: 30px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .portfolio-box .portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), #0ef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 3rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+}
+@media (max-width: 480px) {
+  .portfolio-container {
+    grid-template-columns: repeat(1, 1fr);
+    }
+    .portfolio-layer h4 {
+        font-size: 22px;
+    }
+    .portfolio-layer p {
+        font-size: 19px;
+    }
+        .portfolio-box .portfolio-layer {
+    padding: 0 2rem;
+}
+    .portfolio-layer a i {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.portfolio-layer a {
+    border-radius: 30%;
+}
 }
